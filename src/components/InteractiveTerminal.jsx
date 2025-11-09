@@ -257,7 +257,7 @@ export function InteractiveTerminal({ t, language = 'en', onLanguageChange, onTh
     const welcomeMsg = [
       '╔════════════════════════════════════════════════════════════╗',
       '║                                                            ║',
-      '║   Welcome to Ebubekir'ss Interactive Terminal v1.0           ║',
+      '║   Welcome to Ebubekir's Interactive Terminal v1.0           ║',
       '║   DevOps Engineer | Full Stack Developer | CEO            ║',
       '║                                                            ║',
       '╚════════════════════════════════════════════════════════════╝',
