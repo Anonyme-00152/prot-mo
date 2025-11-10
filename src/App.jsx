@@ -395,7 +395,7 @@ function App() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="pt-16 p-6 border border-gray-200 dark:border-gray-800 rounded-lg hover:shadow-lg transition-shadow"
+                className="pt-16 p-6 border border-gray-200 dark:border-gray-800 rounded-lg hover:shadow-lg transition-shadow relative"
               >
                 <div className="w-12 h-12 bg-gray-100 dark:bg-gray-900 rounded-lg flex items-center justify-center mb-4">
                   {index === 0 && <Server size={24} />}
@@ -474,7 +474,7 @@ function App() {
                 transition={{ delay: index * 0.2 }}
                 className="relative pl-12 md:pl-8 border-l-2 border-gray-300 dark:border-gray-700"
               >
-                <div className="absolute left-0 top-0 w-8 h-8 bg-gray-900 dark:bg-white rounded-full transform -translate-x-[17px] flex items-center justify-center"></div>
+                <div className="absolute left-0 top-0 w-8 h-8 bg-gray-900 dark:bg-white rounded-full transform -translate-x-[17px] flex items-center justify-center hidden md:flex"></div>
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold">{job.title}</h3>
                   <p className="text-lg text-gray-600 dark:text-gray-400">{job.company}</p>
@@ -539,7 +539,7 @@ function App() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="pt-16 p-6 border border-gray-200 dark:border-gray-800 rounded-lg hover:shadow-lg transition-shadow"
+                className="pt-16 p-6 border border-gray-200 dark:border-gray-800 rounded-lg hover:shadow-lg transition-shadow relative"
               >
                 <h3 className="text-lg font-bold mb-2">{cert.name}</h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-1">{cert.issuer}</p>
