@@ -472,9 +472,9 @@ function App() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
-                className="relative pl-8 border-l-2 border-gray-300 dark:border-gray-700"
+                className="relative pl-12 md:pl-8 border-l-2 border-gray-300 dark:border-gray-700"
               >
-                <div className="absolute left-0 top-0 w-4 h-4 bg-gray-900 dark:bg-white rounded-full transform -translate-x-[9px]"></div>
+                <div className="absolute left-0 top-0 w-8 h-8 bg-gray-900 dark:bg-white rounded-full transform -translate-x-[17px] flex items-center justify-center"></div>
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold">{job.title}</h3>
                   <p className="text-lg text-gray-600 dark:text-gray-400">{job.company}</p>
@@ -531,7 +531,7 @@ function App() {
             {t.certifications.title}
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
             {t.certifications.list.map((cert, index) => (
               <motion.div
                 key={index}
