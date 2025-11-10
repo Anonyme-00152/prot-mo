@@ -118,7 +118,7 @@ export function GitHubActivity({ t }) {
         id: 1,
         name: 'portfolio',
         description: 'Personal portfolio website built with React and Vite',
-        html_url: 'https://github.com/lekesiz/portfolio',
+        html_url: 'https://github.com/Anonyme-00152/portfolio',
         stargazers_count: 12,
         forks_count: 3,
         language: 'JavaScript',

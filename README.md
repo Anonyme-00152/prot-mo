@@ -50,7 +50,7 @@ Personal portfolio website showcasing professional experience, projects, and ski
 
 ```bash
 # Clone the repository
-git clone https://github.com/lekesiz/portfolio.git
+git clone https://github.com/Anonyme-00152/portfolio.git
 
 # Navigate to project directory
 cd portfolio
@@ -179,7 +179,7 @@ This project is private and proprietary.
 **Mikail Lekesiz**
 - Website: [netzinformatique.fr](https://netzinformatique.fr)
 - LinkedIn: [@mikail-lekesiz](https://www.linkedin.com/in/mikail-lekesiz/)
-- GitHub: [@lekesiz](https://github.com/lekesiz)
+- GitHub: [@lekesiz](https://github.com/Anonyme-00152)
 - Twitter: [@lekesiz_mikail](https://x.com/lekesiz_mikail)
 
 ### 📧 Contact
@@ -235,7 +235,7 @@ Profesyonel deneyim, projeler ve yetenekleri sergileyen kişisel portfolio web s
 
 ```bash
 # Repository'yi klonlayın
-git clone https://github.com/lekesiz/portfolio.git
+git clone https://github.com/Anonyme-00152/portfolio.git
 
 # Proje dizinine gidin
 cd portfolio
@@ -364,7 +364,7 @@ Bu proje özel ve tescillidir.
 **Mikail Lekesiz**
 - Website: [netzinformatique.fr](https://netzinformatique.fr)
 - LinkedIn: [@mikail-lekesiz](https://www.linkedin.com/in/mikail-lekesiz/)
-- GitHub: [@lekesiz](https://github.com/lekesiz)
+- GitHub: [@lekesiz](https://github.com/Anonyme-00152)
 - Twitter: [@lekesiz_mikail](https://x.com/lekesiz_mikail)
 
 ### 📧 İletişim
