@@ -102,7 +102,7 @@ export function SkillsVisualization({ skills, t }) {
                         px-3 py-1.5
                         bg-white dark:bg-black
                         border border-gray-200 dark:border-gray-800
-                        rounded-full text-sm font-medium
+                        rounded-xl text-sm font-medium
                         transition-all duration-200
                         cursor-pointer
                         ${colorSchemes[category]}

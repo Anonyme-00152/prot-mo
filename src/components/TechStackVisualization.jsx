@@ -296,7 +296,7 @@ export function TechStackVisualization({ t }) {
                         <span className={`text-xs font-bold ${getProficiencyColor(skill.level)} min-w-[80px] text-right`}>
                           {getProficiencyLabel(skill.level)}
                         </span>
-                        <div className="w-32 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                        <div className="w-32 h-2 bg-gray-200 dark:bg-gray-700 rounded-3xl overflow-hidden">
                           <motion.div
                             initial={{ width: 0 }}
                             whileInView={{ width: `${skill.level}%` }}
