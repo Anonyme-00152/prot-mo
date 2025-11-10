@@ -550,7 +550,7 @@ function App() {
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {t.services.list.map((service, index) => (
+            {t.services.list?.map((service, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
@@ -634,7 +634,7 @@ function App() {
           </motion.div>
 
           <div className="max-w-4xl mx-auto space-y-6">
-            {t.education.schools.map((school, index) => (
+            {t.education.schools?.map((school, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, x: -50 }}
@@ -675,7 +675,7 @@ function App() {
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {t.certifications.list.map((cert, index) => (
+            {t.certifications.list?.map((cert, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
