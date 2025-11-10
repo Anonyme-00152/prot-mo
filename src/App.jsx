@@ -135,7 +135,7 @@ function App() {
           scrolled ? 'bg-white/90 dark:bg-black/90 backdrop-blur-lg shadow-lg' : 'bg-transparent'
         }`}
       >
-        <div className="container mx-auto px-4 max-w-5xl py-4 flex justify-between items-center">
+        <div className="container mx-auto px-4 max-w-6xl py-4 flex justify-between items-center">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -204,7 +204,7 @@ function App() {
               exit={{ opacity: 0, height: 0 }}
               className="md:hidden bg-white dark:bg-black border-t border-gray-200 dark:border-gray-800"
             >
-              <div className="container mx-auto px-4 max-w-5xl py-4 flex flex-col gap-4">
+              <div className="container mx-auto px-4 max-w-6xl py-4 flex flex-col gap-4">
                 {['about', 'services', 'skills', 'experience', 'projects', 'contact'].map((item) => (
                   <button
                     key={item}
@@ -256,7 +256,7 @@ function App() {
 
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex items-center pt-20">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Side - Text */}
             <motion.div
@@ -357,7 +357,7 @@ function App() {
 
       {/* About Section */}
       <section id="about" className="py-20 bg-gray-50 dark:bg-gray-950">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -375,7 +375,7 @@ function App() {
 
       {/* Services Section */}
       <section id="services" className="py-20">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -414,7 +414,7 @@ function App() {
 
       {/* Skills Section */}
       <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-950">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-6xl">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -453,7 +453,7 @@ function App() {
 
       {/* Experience Section */}
       <section id="experience" className="py-20">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-6xl">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -488,7 +488,7 @@ function App() {
 
       {/* Education Section */}
       <section id="education" className="py-20 bg-gray-50 dark:bg-gray-950">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-6xl">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -520,7 +520,7 @@ function App() {
 
       {/* Certifications Section */}
       <section id="certifications" className="py-20">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-6xl">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -530,7 +530,7 @@ function App() {
             {t.certifications.title}
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
             {t.certifications.list.map((cert, index) => (
               <motion.div
                 key={index}
@@ -554,7 +554,7 @@ function App() {
 
       {/* Projects Section */}
       <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-950">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -623,7 +623,7 @@ function App() {
 
       {/* Interactive Terminal Section */}
       <section id="terminal" className="py-20 bg-gray-50 dark:bg-gray-950">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-6xl">
           <InteractiveTerminal
             t={t}
             language={language}
@@ -636,14 +636,14 @@ function App() {
 
       {/* Tech Stack Visualization Section */}
       <section id="techstack" className="py-20">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-6xl">
           <TechStackVisualization t={t} />
         </div>
       </section>
 
       {/* GitHub Activity Section */}
       <section id="github" className="py-20 bg-gray-50 dark:bg-gray-950">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -661,21 +661,21 @@ function App() {
 
       {/* Case Studies Section */}
       <section id="casestudies" className="py-20">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-6xl">
           <CaseStudies t={t} />
         </div>
       </section>
 
       {/* Timeline Section */}
       <section id="timeline" className="py-20 bg-gray-50 dark:bg-gray-950">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-6xl">
           <Timeline t={t} />
         </div>
       </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-20">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -802,7 +802,7 @@ function App() {
 
       {/* Footer */}
       <footer className="py-8 border-t border-gray-200 dark:border-gray-800">
-        <div className="container mx-auto px-4 max-w-5xl text-center text-gray-600 dark:text-gray-400">
+        <div className="container mx-auto px-4 max-w-6xl text-center text-gray-600 dark:text-gray-400">
           <p>
             © 2025 Ebubekir ARTI. {t.footer.rights}.
           </p>
