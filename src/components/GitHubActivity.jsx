@@ -238,7 +238,7 @@ export function GitHubActivity({ t }) {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg"
+            className="p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl"
           >
             <div className="flex items-center gap-2 mb-2">
               <stat.icon size={16} className="text-gray-600 dark:text-gray-400" />
@@ -272,7 +272,7 @@ export function GitHubActivity({ t }) {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="block p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg hover:border-gray-400 dark:hover:border-gray-600 transition-colors group"
+                className="block p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl hover:border-gray-400 dark:hover:border-gray-600 transition-colors group"
               >
                 <div className="flex items-start justify-between mb-2">
                   <h4 className="font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
@@ -331,7 +331,7 @@ export function GitHubActivity({ t }) {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="flex items-start gap-3 p-3 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg"
+                className="flex items-start gap-3 p-3 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl"
               >
                 <div className="mt-1">{getEventIcon(event.type)}</div>
                 <div className="flex-1 min-w-0">
@@ -347,7 +347,7 @@ export function GitHubActivity({ t }) {
           </div>
 
           {error && (
-            <div className="mt-4 p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
+            <div className="mt-4 p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-3xl">
               <p className="text-sm text-yellow-800 dark:text-yellow-200">
                 ⚠️ Using cached data. Live updates unavailable.
               </p>
@@ -367,7 +367,7 @@ export function GitHubActivity({ t }) {
           href={`https://github.com/${GITHUB_USERNAME}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-black rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-black rounded-3xl hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
         >
           <Github size={20} />
           <span>View Full GitHub Profile</span>

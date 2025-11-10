@@ -182,7 +182,7 @@ export function Timeline({ t }) {
                 <div className={`w-full md:w-[calc(50%-2rem)] ${isLeft ? 'md:text-right' : 'md:text-left'} mb-8 md:mb-0`}>
                   <motion.div
                     whileHover={{ scale: 1.02 }}
-                    className={`p-6 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-xl hover:border-gray-400 dark:hover:border-gray-600 transition-all hover:shadow-xl`}
+                    className={`p-6 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-3xl hover:border-gray-400 dark:hover:border-gray-600 transition-all hover:shadow-xl`}
                   >
                     {/* Year Badge */}
                     <div className={`inline-flex items-center gap-2 px-3 py-1 bg-gradient-to-r ${event.color} text-white rounded-full text-sm font-bold mb-3`}>
@@ -249,7 +249,7 @@ export function Timeline({ t }) {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl"
+        className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-3xl"
       >
         <div className="text-center">
           <div className="text-3xl font-bold text-gray-900 dark:text-white mb-1">9+</div>

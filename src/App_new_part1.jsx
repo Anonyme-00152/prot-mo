@@ -183,7 +183,7 @@ function App() {
                     onClick={() => changeLanguage(lang)}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all ${
+                    className={`px-3 py-1.5 text-xs font-bold rounded-3xl transition-all ${
                       language === lang
                         ? 'gradient-bg text-white shadow-lg'
                         : 'text-[#6B7280] dark:text-[#9CA3AF] hover:text-foreground hover:bg-secondary'
@@ -199,7 +199,7 @@ function App() {
                 onClick={toggleTheme}
                 whileHover={{ scale: 1.1, rotate: 180 }}
                 whileTap={{ scale: 0.9 }}
-                className="ml-2 p-2.5 rounded-lg border border-border hover:bg-secondary transition-all"
+                className="ml-2 p-2.5 rounded-3xl border border-border hover:bg-secondary transition-all"
                 aria-label="Toggle theme"
               >
                 {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
@@ -210,7 +210,7 @@ function App() {
             <motion.button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               whileTap={{ scale: 0.95 }}
-              className="md:hidden p-2 rounded-lg hover:bg-secondary transition-colors"
+              className="md:hidden p-2 rounded-3xl hover:bg-secondary transition-colors"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </motion.button>
@@ -243,7 +243,7 @@ function App() {
                     <button
                       key={lang}
                       onClick={() => changeLanguage(lang)}
-                      className={`px-3 py-1.5 text-sm rounded-lg ${
+                      className={`px-3 py-1.5 text-sm rounded-3xl ${
                         language === lang
                           ? 'gradient-bg text-white'
                           : 'text-[#6B7280] dark:text-[#9CA3AF] hover:bg-secondary'
@@ -256,7 +256,7 @@ function App() {
 
                 <button
                   onClick={toggleTheme}
-                  className="flex items-center gap-3 w-full p-3 rounded-lg border border-border hover:bg-secondary transition-colors"
+                  className="flex items-center gap-3 w-full p-3 rounded-3xl border border-border hover:bg-secondary transition-colors"
                 >
                   {theme === 'dark' ? (
                     <>

@@ -150,7 +150,7 @@ export function TechStackVisualization({ t }) {
       >
         <button
           onClick={() => setSelectedCategory(null)}
-          className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+          className={`px-4 py-2 rounded-3xl text-sm font-medium transition-colors ${
             !selectedCategory
               ? 'bg-gray-900 dark:bg-white text-white dark:text-black'
               : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
@@ -162,7 +162,7 @@ export function TechStackVisualization({ t }) {
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+            className={`px-4 py-2 rounded-3xl text-sm font-medium transition-colors ${
               selectedCategory === category
                 ? 'bg-gray-900 dark:bg-white text-white dark:text-black'
                 : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
@@ -177,7 +177,7 @@ export function TechStackVisualization({ t }) {
       <div className="flex justify-center gap-2">
         <button
           onClick={() => setViewMode('grid')}
-          className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+          className={`px-4 py-2 rounded-3xl text-sm font-medium transition-colors ${
             viewMode === 'grid'
               ? 'bg-gray-900 dark:bg-white text-white dark:text-black'
               : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300'
@@ -187,7 +187,7 @@ export function TechStackVisualization({ t }) {
         </button>
         <button
           onClick={() => setViewMode('list')}
-          className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+          className={`px-4 py-2 rounded-3xl text-sm font-medium transition-colors ${
             viewMode === 'list'
               ? 'bg-gray-900 dark:bg-white text-white dark:text-black'
               : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300'
@@ -209,7 +209,7 @@ export function TechStackVisualization({ t }) {
           >
             {/* Category Header */}
             <div className="flex items-center gap-3 mb-6">
-              <div className={`p-3 rounded-lg bg-gradient-to-br ${data.color}`}>
+              <div className={`p-3 rounded-3xl bg-gradient-to-br ${data.color}`}>
                 <data.icon size={24} className="text-white" />
               </div>
               <div>
@@ -231,7 +231,7 @@ export function TechStackVisualization({ t }) {
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.05 }}
                     whileHover={{ scale: 1.05 }}
-                    className={`p-4 bg-white dark:bg-gray-900 border-2 ${data.borderColor} rounded-lg hover:shadow-lg transition-all cursor-pointer`}
+                    className={`p-4 bg-white dark:bg-gray-900 border-2 ${data.borderColor} rounded-3xl hover:shadow-lg transition-all cursor-pointer`}
                   >
                     <div className="flex items-start justify-between mb-3">
                       <div>
@@ -279,7 +279,7 @@ export function TechStackVisualization({ t }) {
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: index * 0.03 }}
-                      className="flex items-center gap-4 p-3 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg hover:border-gray-400 dark:hover:border-gray-600 transition-colors"
+                      className="flex items-center gap-4 p-3 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl hover:border-gray-400 dark:hover:border-gray-600 transition-colors"
                     >
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2">
@@ -322,7 +322,7 @@ export function TechStackVisualization({ t }) {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 bg-gray-100 dark:bg-gray-900 rounded-lg"
+        className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 bg-gray-100 dark:bg-gray-900 rounded-3xl"
       >
         <div className="text-center">
           <div className="text-3xl font-bold text-gray-900 dark:text-white">

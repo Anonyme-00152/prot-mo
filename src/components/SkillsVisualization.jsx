@@ -119,7 +119,7 @@ export function SkillsVisualization({ skills, t }) {
 
         {/* Skill Level Indicator (Optional) */}
         <AnimateOnScroll animation="fade" delay={600}>
-          <div className="mt-12 p-6 bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg max-w-4xl mx-auto">
+          <div className="mt-12 p-6 bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-3xl max-w-4xl mx-auto">
             <div className="flex items-center justify-center gap-2 text-sm text-gray-600 dark:text-gray-400">
               <span className="font-semibold text-gray-900 dark:text-white">Pro Tip:</span>
               <span>Hover over skills to see category highlights • Total: {categories.reduce((acc, [, items]) => acc + items.length, 0)} technologies</span>

@@ -123,7 +123,7 @@
                     transition={{ delay: 0.8 + index * 0.1 }}
                     whileHover={{ scale: 1.2, rotate: 5 }}
                     whileTap={{ scale: 0.9 }}
-                    className="p-3 rounded-xl glass border border-border hover:border-primary hover:glow transition-all group"
+                    className="p-3 rounded-3xl glass border border-border hover:border-primary hover:glow transition-all group"
                     aria-label={label}
                   >
                     <Icon className="w-5 h-5 text-foreground-secondary group-hover:text-primary transition-colors" />
@@ -170,7 +170,7 @@
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 1, duration: 0.5 }}
-                  className="absolute top-10 -right-10 glass rounded-2xl p-4 border border-border shadow-xl"
+                  className="absolute top-10 -right-10 glass rounded-3xl p-4 border border-border shadow-xl"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                 >
                   <Code className="w-8 h-8 text-primary" />
@@ -181,7 +181,7 @@
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 1.2, duration: 0.5 }}
-                  className="absolute bottom-10 -left-10 glass rounded-2xl p-4 border border-border shadow-xl"
+                  className="absolute bottom-10 -left-10 glass rounded-3xl p-4 border border-border shadow-xl"
                   whileHover={{ scale: 1.1, rotate: -5 }}
                 >
                   <Shield className="w-8 h-8 text-primary" />
