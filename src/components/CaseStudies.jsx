@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import githubProjects from './githubProjects'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   Award, TrendingUp, Users, Zap, DollarSign, Clock, CheckCircle2,
@@ -10,124 +11,7 @@ import {
  * Showcases real projects with metrics and impact
  */
 
-const caseStudies = [
-  {
-    id: 1,
-    title: 'Enterprise Cloud Migration',
-    client: 'Fortune 500 Financial Services Company',
-    industry: 'Finance & Banking',
-    duration: '8 months',
-    team: '12 engineers',
-    role: 'Lead DevOps Architect',
-    challenge: 'Legacy monolithic architecture causing scalability issues, high infrastructure costs, and slow deployment cycles. System outages affecting 2M+ customers.',
-    solution: [
-      'Designed and implemented microservices architecture',
-      'Migrated 50+ services to Kubernetes on AWS EKS',
-      'Implemented automated CI/CD pipelines with GitLab CI',
-      'Set up comprehensive monitoring with Prometheus & Grafana',
-      'Zero-downtime migration strategy with gradual rollout',
-    ],
-    technologies: ['Kubernetes', 'AWS', 'Docker', 'Terraform', 'GitLab CI', 'Prometheus', 'Grafana'],
-    metrics: [
-      { label: 'Cost Reduction', value: '40%', icon: DollarSign, color: 'text-green-600' },
-      { label: 'Deployment Speed', value: '10x', icon: Zap, color: 'text-yellow-600' },
-      { label: 'System Uptime', value: '99.99%', icon: TrendingUp, color: 'text-blue-600' },
-      { label: 'Team Efficiency', value: '+65%', icon: Users, color: 'text-cyan-500' },
-    ],
-    testimonial: {
-      text: 'Mikail\'s expertise in cloud architecture transformed our infrastructure. The migration was seamless, and we\'ve seen tremendous improvements in performance and cost savings.',
-      author: 'CTO, Financial Services',
-    },
-    featured: true,
-  },
-  {
-    id: 2,
-    title: 'E-commerce Platform Scaling',
-    client: 'Leading European Retail Chain',
-    industry: 'Retail & E-commerce',
-    duration: '6 months',
-    team: '8 developers',
-    role: 'Full Stack Lead & DevOps Engineer',
-    challenge: 'Website crashing during peak traffic (Black Friday), poor mobile experience, slow checkout process leading to 35% cart abandonment.',
-    solution: [
-      'Rebuilt frontend with React for better performance',
-      'Implemented Node.js microservices for scalability',
-      'Set up auto-scaling infrastructure on Azure',
-      'Optimized database queries and added Redis caching',
-      'Implemented progressive web app (PWA) features',
-    ],
-    technologies: ['React', 'Node.js', 'MongoDB', 'Redis', 'Azure', 'Docker', 'Nginx'],
-    metrics: [
-      { label: 'Traffic Handled', value: '500K', icon: Users, color: 'text-green-600' },
-      { label: 'Page Load Time', value: '-70%', icon: Zap, color: 'text-yellow-600' },
-      { label: 'Conversion Rate', value: '+45%', icon: TrendingUp, color: 'text-blue-600' },
-      { label: 'Revenue Impact', value: '+€2.5M', icon: DollarSign, color: 'text-green-600' },
-    ],
-    testimonial: {
-      text: 'The platform now handles Black Friday traffic effortlessly. Our conversion rates have never been better. Mikail delivered beyond expectations.',
-      author: 'Head of Digital, Retail Chain',
-    },
-    featured: true,
-  },
-  {
-    id: 3,
-    title: 'AI-Powered Analytics Dashboard',
-    client: 'Healthcare SaaS Startup',
-    industry: 'Healthcare Technology',
-    duration: '4 months',
-    team: '5 developers',
-    role: 'Full Stack Developer & AI Integration Specialist',
-    challenge: 'Manual data analysis taking hours, lack of real-time insights, difficulty identifying patient trends and health risks.',
-    solution: [
-      'Built real-time analytics dashboard with React & D3.js',
-      'Integrated machine learning models for predictive analytics',
-      'Implemented Python backend with FastAPI',
-      'Created automated reporting system',
-      'Real-time data streaming with WebSockets',
-    ],
-    technologies: ['React', 'Python', 'FastAPI', 'TensorFlow', 'PostgreSQL', 'WebSockets', 'D3.js'],
-    metrics: [
-      { label: 'Analysis Time', value: '-95%', icon: Clock, color: 'text-green-600' },
-      { label: 'Prediction Accuracy', value: '94%', icon: Award, color: 'text-cyan-500' },
-      { label: 'User Adoption', value: '100%', icon: Users, color: 'text-blue-600' },
-      { label: 'Early Detection', value: '+80%', icon: TrendingUp, color: 'text-green-600' },
-    ],
-    testimonial: {
-      text: 'This dashboard has transformed how we analyze patient data. The AI predictions are incredibly accurate and have helped us provide better care.',
-      author: 'CEO, Healthcare SaaS',
-    },
-    featured: false,
-  },
-  {
-    id: 4,
-    title: 'DevOps Pipeline Automation',
-    client: 'Tech Startup Portfolio (10 companies)',
-    industry: 'Technology',
-    duration: '12 months',
-    team: '3 DevOps engineers',
-    role: 'Senior DevOps Consultant',
-    challenge: 'Manual deployments causing errors, inconsistent environments, no proper testing, taking 2-3 days per release.',
-    solution: [
-      'Implemented end-to-end CI/CD with Jenkins & ArgoCD',
-      'Containerized all applications with Docker',
-      'Set up Kubernetes clusters for each client',
-      'Automated testing and quality gates',
-      'Infrastructure as Code with Terraform',
-    ],
-    technologies: ['Jenkins', 'ArgoCD', 'Kubernetes', 'Docker', 'Terraform', 'Ansible', 'SonarQube'],
-    metrics: [
-      { label: 'Deployment Time', value: '-80%', icon: Clock, color: 'text-green-600' },
-      { label: 'Error Rate', value: '-90%', icon: CheckCircle2, color: 'text-green-600' },
-      { label: 'Projects Automated', value: '30+', icon: Award, color: 'text-cyan-500' },
-      { label: 'Time Saved/Month', value: '120h', icon: Clock, color: 'text-blue-600' },
-    ],
-    testimonial: {
-      text: 'Mikail automated our entire deployment process. What used to take days now takes minutes. Game changer for our startup.',
-      author: 'Founder, Tech Startup',
-    },
-    featured: false,
-  },
-]
+const caseStudies = githubProjects
 
 export function CaseStudies({ t }) {
   const [selectedCase, setSelectedCase] = useState(null)
