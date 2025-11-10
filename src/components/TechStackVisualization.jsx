@@ -30,7 +30,7 @@ const techStack = {
   },
   'Frontend Development': {
     icon: Smartphone,
-    color: 'from-purple-500 to-pink-500',
+    color: 'from-cyan-500 to-cyan-400',
     borderColor: 'border-purple-500',
     skills: [
       { name: 'React', level: 95, category: 'Framework' },

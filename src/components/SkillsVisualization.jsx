@@ -11,7 +11,7 @@ export function SkillsVisualization({ skills, t }) {
   // Color schemes for different categories
   const colorSchemes = {
     languages: 'hover:bg-blue-50 dark:hover:bg-blue-950 hover:border-blue-500 dark:hover:border-blue-500',
-    frontend: 'hover:bg-purple-50 dark:hover:bg-purple-950 hover:border-purple-500 dark:hover:border-purple-500',
+    frontend: 'hover:bg-cyan-50 dark:hover:bg-cyan-950 hover:border-cyan-500 dark:hover:border-cyan-500',
     backend: 'hover:bg-green-50 dark:hover:bg-green-950 hover:border-green-500 dark:hover:border-green-500',
     databases: 'hover:bg-yellow-50 dark:hover:bg-yellow-950 hover:border-yellow-500 dark:hover:border-yellow-500',
     devops: 'hover:bg-red-50 dark:hover:bg-red-950 hover:border-red-500 dark:hover:border-red-500',

@@ -32,7 +32,7 @@ const caseStudies = [
       { label: 'Cost Reduction', value: '40%', icon: DollarSign, color: 'text-green-600' },
       { label: 'Deployment Speed', value: '10x', icon: Zap, color: 'text-yellow-600' },
       { label: 'System Uptime', value: '99.99%', icon: TrendingUp, color: 'text-blue-600' },
-      { label: 'Team Efficiency', value: '+65%', icon: Users, color: 'text-purple-600' },
+      { label: 'Team Efficiency', value: '+65%', icon: Users, color: 'text-cyan-500' },
     ],
     testimonial: {
       text: 'Mikail\'s expertise in cloud architecture transformed our infrastructure. The migration was seamless, and we\'ve seen tremendous improvements in performance and cost savings.',
@@ -88,7 +88,7 @@ const caseStudies = [
     technologies: ['React', 'Python', 'FastAPI', 'TensorFlow', 'PostgreSQL', 'WebSockets', 'D3.js'],
     metrics: [
       { label: 'Analysis Time', value: '-95%', icon: Clock, color: 'text-green-600' },
-      { label: 'Prediction Accuracy', value: '94%', icon: Award, color: 'text-purple-600' },
+      { label: 'Prediction Accuracy', value: '94%', icon: Award, color: 'text-cyan-500' },
       { label: 'User Adoption', value: '100%', icon: Users, color: 'text-blue-600' },
       { label: 'Early Detection', value: '+80%', icon: TrendingUp, color: 'text-green-600' },
     ],
@@ -118,7 +118,7 @@ const caseStudies = [
     metrics: [
       { label: 'Deployment Time', value: '-80%', icon: Clock, color: 'text-green-600' },
       { label: 'Error Rate', value: '-90%', icon: CheckCircle2, color: 'text-green-600' },
-      { label: 'Projects Automated', value: '30+', icon: Award, color: 'text-purple-600' },
+      { label: 'Projects Automated', value: '30+', icon: Award, color: 'text-cyan-500' },
       { label: 'Time Saved/Month', value: '120h', icon: Clock, color: 'text-blue-600' },
     ],
     testimonial: {
@@ -384,7 +384,7 @@ export function CaseStudies({ t }) {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="text-center p-8 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-3xl"
+        className="text-center p-8 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 rounded-3xl"
       >
         <h3 className="text-2xl font-bold mb-4">
           Want similar results for your project?

@@ -25,7 +25,7 @@ const timelineEvents = [
       '€2M+ in annual revenue',
       'Specialized in cloud migration and DevOps',
     ],
-    color: 'from-purple-500 to-pink-500',
+    color: 'from-cyan-500 to-cyan-400',
   },
   {
     id: 2,
@@ -108,7 +108,7 @@ const timelineEvents = [
       'Research in cloud optimization',
       'Teaching assistant for 2 years',
     ],
-    color: 'from-red-500 to-pink-500',
+    color: 'from-red-500 to-cyan-400',
   },
   {
     id: 7,
@@ -249,7 +249,7 @@ export function Timeline({ t }) {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-3xl"
+        className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 rounded-3xl"
       >
         <div className="text-center">
           <div className="text-3xl font-bold text-gray-900 dark:text-white mb-1">9+</div>
