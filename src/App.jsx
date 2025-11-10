@@ -26,6 +26,12 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
   const [scrolled, setScrolled] = useState(false)
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
   const { theme, setTheme } = useTheme()
   const { scrollYProgress } = useScroll()
 
@@ -125,13 +131,15 @@ function App() {
   return (
     <div className="min-h-screen bg-background text-foreground relative overflow-x-hidden">
       {/* Custom Cursor */}
-      <CustomCursor />
+      {isClient && <CustomCursor />}
 
       {/* Progress Bar */}
-      <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#667EEA] to-[#764BA2] z-50 origin-left"
-        style={{ scaleX: scrollYProgress }}
-      />
+      {isClient && (
+        <motion.div
+          className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#667EEA] to-[#764BA2] z-50 origin-left"
+          style={{ scaleX: scrollYProgress }}
+        />
+      )}
 
       {/* Modern Navigation with Glassmorphism */}
       <motion.nav
