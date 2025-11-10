@@ -13,6 +13,13 @@ export const translations = {
     hero: {
       greeting: "Bonjour, je suis",
       title: "Développeur Web – Cybersécurité & Intelligence Artificielle",
+      typingTitles: [
+        "Cybersécurité & Intelligence Artificielle",
+        "Création de Solutions Digitales Innovantes",
+        "Développement Front-End & Expérience Utilisateur",
+        "Automatisation & Technologies Modernes",
+        "Hébergement & Maintenance de Sites Professionnels"
+      ],
       description: "Passionné par l'informatique, je suis Développeur Web, spécialisé en Cybersécurité et Intelligence Artificielle. J'ai une solide expérience en Python, HTML, CSS, JavaScript et Bootstrap, et j'ai créé plusieurs sites internet utilisés par des entreprises.",
       downloadCV: "Télécharger le CV",
       contact: "Me Contacter"
@@ -228,6 +235,13 @@ export const translations = {
     hero: {
       greeting: "Hello, I'm",
       title: "Développeur Web – Cybersécurité & Intelligence Artificielle",
+      typingTitles: [
+        "Cybersécurité & Intelligence Artificielle",
+        "Création de Solutions Digitales Innovantes",
+        "Développement Front-End & Expérience Utilisateur",
+        "Automatisation & Technologies Modernes",
+        "Hébergement & Maintenance de Sites Professionnels"
+      ],
       description: "Passionate about IT, I am a Web Developer, specializing in Cybersecurity and Artificial Intelligence. I have solid experience in Python, HTML, CSS, JavaScript, and Bootstrap, and I have created several websites used by companies.",
       downloadCV: "Download CV",
       contact: "Contact Me"

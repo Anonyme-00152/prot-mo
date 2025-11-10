@@ -11,6 +11,7 @@ import { translations } from '@/lib/translations'
 import { useThrottle } from '@/hooks/use-throttle'
 import { analytics, initAnalytics } from '@/lib/analytics'
 import { InteractiveTerminal } from '@/components/InteractiveTerminal'
+import TypingEffect from '@/components/TypingEffect'
 import { GitHubActivity } from '@/components/GitHubActivity'
 import { TechStackVisualization } from '@/components/TechStackVisualization'
 import { CaseStudies } from '@/components/CaseStudies'
@@ -271,7 +272,7 @@ function App() {
                   Ebubekir <span className="text-gray-500 dark:text-gray-400">ARTI</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-medium">
-                  {t.hero.title}
+                  Développeur Web – <TypingEffect phrases={t.hero.typingTitles} />
                 </p>
               </div>
               
