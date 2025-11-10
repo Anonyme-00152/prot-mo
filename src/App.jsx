@@ -197,7 +197,7 @@ function App() {
                     onClick={() => changeLanguage(lang)}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all ${
+                    className={`px-3 py-1.5 text-xs font-bold rounded-3xl transition-all ${
                       language === lang
                         ? 'bg-gradient-to-r from-[var(--primary-gradient-start)] to-[var(--primary-gradient-end)] text-white shadow-lg'
                         : 'text-[#6B7280] dark:text-[#9CA3AF] hover:text-foreground hover:bg-secondary'
@@ -213,7 +213,7 @@ function App() {
                 onClick={toggleTheme}
                 whileHover={{ scale: 1.1, rotate: 180 }}
                 whileTap={{ scale: 0.9 }}
-                className="ml-2 p-2.5 rounded-lg border border-border hover:bg-secondary transition-all"
+                className="ml-2 p-2.5 rounded-3xl border border-border hover:bg-secondary transition-all"
                 aria-label="Toggle theme"
               >
                 {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
@@ -224,7 +224,7 @@ function App() {
             <motion.button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               whileTap={{ scale: 0.95 }}
-              className="md:hidden p-2 rounded-lg hover:bg-secondary transition-colors"
+              className="md:hidden p-2 rounded-3xl hover:bg-secondary transition-colors"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </motion.button>
@@ -257,7 +257,7 @@ function App() {
                     <button
                       key={lang}
                       onClick={() => changeLanguage(lang)}
-                      className={`px-3 py-1.5 text-sm rounded-lg ${
+                      className={`px-3 py-1.5 text-sm rounded-3xl ${
                         language === lang
                           ? 'bg-gradient-to-r from-[var(--primary-gradient-start)] to-[var(--primary-gradient-end)] text-white'
                           : 'text-[#6B7280] dark:text-[#9CA3AF] hover:bg-secondary'
@@ -270,7 +270,7 @@ function App() {
 
                 <button
                   onClick={toggleTheme}
-                  className="flex items-center gap-3 w-full p-3 rounded-lg border border-border hover:bg-secondary transition-colors"
+                  className="flex items-center gap-3 w-full p-3 rounded-3xl border border-border hover:bg-secondary transition-colors"
                 >
                   {theme === 'dark' ? (
                     <>
@@ -414,7 +414,7 @@ function App() {
                     transition={{ delay: 0.8 + index * 0.1 }}
                     whileHover={{ scale: 1.2, rotate: 5 }}
                     whileTap={{ scale: 0.9 }}
-                    className="p-3 rounded-xl bg-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-border)] border-border hover:border-primary hover:glow transition-all group"
+                    className="p-3 rounded-3xl bg-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-border)] border-border hover:border-primary hover:glow transition-all group"
                     aria-label={label}
                   >
                     <Icon className="w-5 h-5 text-foreground-secondary group-hover:text-primary transition-colors" />
@@ -461,7 +461,7 @@ function App() {
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 1, duration: 0.5 }}
-                  className="absolute top-10 -right-10 bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)] rounded-2xl p-4 border border-border shadow-xl"
+                  className="absolute top-10 -right-10 bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)] rounded-3xl p-4 border border-border shadow-xl"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                 >
                   <Code className="w-8 h-8 text-primary" />
@@ -472,7 +472,7 @@ function App() {
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 1.2, duration: 0.5 }}
-                  className="absolute bottom-10 -left-10 bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)] rounded-2xl p-4 border border-border shadow-xl"
+                  className="absolute bottom-10 -left-10 bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)] rounded-3xl p-4 border border-border shadow-xl"
                   whileHover={{ scale: 1.1, rotate: -5 }}
                 >
                   <Shield className="w-8 h-8 text-primary" />
@@ -523,7 +523,7 @@ function App() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-4xl mx-auto"
           >
-            <div className="bg-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-border)] rounded-xl p-8 md:p-12">
+            <div className="bg-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-border)] rounded-3xl p-8 md:p-12">
               <p className="text-lg text-foreground-secondary leading-relaxed">
                 {t.about.content}
               </p>
@@ -558,9 +558,9 @@ function App() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -10 }}
-                className="bg-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-border)] rounded-xl p-6 hover:shadow-[var(--shadow-glow)] group cursor-pointer"
+                className="bg-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-border)] rounded-3xl p-6 hover:shadow-[var(--shadow-glow)] group cursor-pointer"
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-[var(--primary-gradient-start)] to-[var(--primary-gradient-end)] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 rounded-3xl bg-gradient-to-r from-[var(--primary-gradient-start)] to-[var(--primary-gradient-end)] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   {index === 0 && <Code className="w-6 h-6 text-white" />}
                   {index === 1 && <Shield className="w-6 h-6 text-white" />}
                   {index === 2 && <Sparkles className="w-6 h-6 text-white" />}
@@ -642,10 +642,10 @@ function App() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ x: 10 }}
-                className="bg-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-border)] rounded-xl p-6"
+                className="bg-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-border)] rounded-3xl p-6"
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-[var(--primary-gradient-start)] to-[var(--primary-gradient-end)] flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-3xl bg-gradient-to-r from-[var(--primary-gradient-start)] to-[var(--primary-gradient-end)] flex items-center justify-center flex-shrink-0">
                     <GraduationCap className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1">
@@ -683,7 +683,7 @@ function App() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ scale: 1.05 }}
-                className="bg-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-border)] rounded-xl p-6 text-center"
+                className="bg-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-border)] rounded-3xl p-6 text-center"
               >
                 <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[var(--primary-gradient-start)] to-[var(--primary-gradient-end)] flex items-center justify-center mx-auto mb-4">
                   <Sparkles className="w-8 h-8 text-white" />
@@ -749,10 +749,10 @@ function App() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-border)] rounded-xl p-8 space-y-6"
+              className="bg-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-border)] rounded-3xl p-8 space-y-6"
             >
               <div className="flex items-start gap-4 group hover:translate-x-2 transition-transform">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-[var(--primary-gradient-start)] to-[var(--primary-gradient-end)] flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 rounded-3xl bg-gradient-to-r from-[var(--primary-gradient-start)] to-[var(--primary-gradient-end)] flex items-center justify-center flex-shrink-0">
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -764,7 +764,7 @@ function App() {
               </div>
 
               <div className="flex items-start gap-4 group hover:translate-x-2 transition-transform">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-[var(--primary-gradient-start)] to-[var(--primary-gradient-end)] flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 rounded-3xl bg-gradient-to-r from-[var(--primary-gradient-start)] to-[var(--primary-gradient-end)] flex items-center justify-center flex-shrink-0">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -776,7 +776,7 @@ function App() {
               </div>
 
               <div className="flex items-start gap-4 group hover:translate-x-2 transition-transform">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-[var(--primary-gradient-start)] to-[var(--primary-gradient-end)] flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 rounded-3xl bg-gradient-to-r from-[var(--primary-gradient-start)] to-[var(--primary-gradient-end)] flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -808,7 +808,7 @@ function App() {
                     onClick={() => analytics.clickSocialLink(label)}
                     whileHover={{ scale: 1.2, rotate: 5 }}
                     whileTap={{ scale: 0.9 }}
-                    className="p-4 rounded-xl bg-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-border)] border-border hover:border-primary hover:glow transition-all"
+                    className="p-4 rounded-3xl bg-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--bg-[var(--glass-bg)] backdrop-blur-[10px] [-webkit-backdrop-filter:blur(10px)_saturate(180%)] border border-[var(--glass-border)]-border)] border-border hover:border-primary hover:glow transition-all"
                     aria-label={label}
                   >
                     <Icon className="w-6 h-6" />

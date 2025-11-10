@@ -414,7 +414,7 @@ export function InteractiveTerminal({ t, language = 'en', onLanguageChange, onTh
       className="w-full max-w-4xl mx-auto"
     >
       {/* Terminal Header */}
-      <div className="bg-gray-800 dark:bg-gray-900 rounded-t-lg px-4 py-3 flex items-center gap-2">
+      <div className="bg-gray-800 dark:bg-gray-900 rounded-t-3xl px-4 py-3 flex items-center gap-2">
         <div className="flex gap-2">
           <div className="w-3 h-3 rounded-full bg-red-500" />
           <div className="w-3 h-3 rounded-full bg-yellow-500" />
@@ -430,7 +430,7 @@ export function InteractiveTerminal({ t, language = 'en', onLanguageChange, onTh
       <div
         ref={terminalRef}
         onClick={handleTerminalClick}
-        className="bg-black/95 dark:bg-black rounded-b-lg p-4 font-mono text-sm min-h-[400px] max-h-[600px] overflow-y-auto cursor-text"
+        className="bg-black/95 dark:bg-black rounded-b-3xl p-4 font-mono text-sm min-h-[400px] max-h-[600px] overflow-y-auto cursor-text"
       >
         <AnimatePresence>
           {history.map((entry, index) => (
@@ -494,7 +494,7 @@ export function InteractiveTerminal({ t, language = 'en', onLanguageChange, onTh
 
       {/* Hint */}
       <div className="mt-4 text-center text-sm text-gray-500 dark:text-gray-400">
-        <p>💡 Try: <code className="px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">whoami</code>, <code className="px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">skills</code>, <code className="px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">projects</code></p>
+        <p>💡 Try: <code className="px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-2xl">whoami</code>, <code className="px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-2xl">skills</code>, <code className="px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-2xl">projects</code></p>
       </div>
     </motion.div>
   )

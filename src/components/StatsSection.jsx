@@ -104,7 +104,7 @@ export function StatsSection({ t }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg text-center hover:shadow-lg transition-shadow group"
+                className="p-6 bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-3xl text-center hover:shadow-lg transition-shadow group"
               >
                 <div className="w-12 h-12 bg-gray-100 dark:bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gray-900 dark:group-hover:bg-white transition-colors">
                   <Icon className="text-gray-900 dark:text-white group-hover:text-white dark:group-hover:text-black transition-colors" size={24} />

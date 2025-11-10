@@ -158,7 +158,7 @@ export function CaseStudies({ t }) {
       <div className="flex justify-center gap-4">
         <button
           onClick={() => setFilter('all')}
-          className={`px-6 py-2 rounded-lg font-medium transition-colors ${
+          className={`px-6 py-2 rounded-3xl font-medium transition-colors ${
             filter === 'all'
               ? 'bg-gray-900 dark:bg-white text-white dark:text-black'
               : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
@@ -168,7 +168,7 @@ export function CaseStudies({ t }) {
         </button>
         <button
           onClick={() => setFilter('featured')}
-          className={`px-6 py-2 rounded-lg font-medium transition-colors ${
+          className={`px-6 py-2 rounded-3xl font-medium transition-colors ${
             filter === 'featured'
               ? 'bg-gray-900 dark:bg-white text-white dark:text-black'
               : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
@@ -188,7 +188,7 @@ export function CaseStudies({ t }) {
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
             onClick={() => setSelectedCase(study)}
-            className="group relative p-6 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-xl hover:border-gray-400 dark:hover:border-gray-600 cursor-pointer transition-all hover:shadow-xl"
+            className="group relative p-6 bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-3xl hover:border-gray-400 dark:hover:border-gray-600 cursor-pointer transition-all hover:shadow-xl"
           >
             {study.featured && (
               <div className="absolute top-4 right-4 px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300 text-xs font-bold rounded-full">
@@ -217,7 +217,7 @@ export function CaseStudies({ t }) {
                 {study.metrics.slice(0, 4).map((metric) => (
                   <div
                     key={metric.label}
-                    className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg"
+                    className="p-3 bg-gray-50 dark:bg-gray-800 rounded-3xl"
                   >
                     <div className="flex items-center gap-2 mb-1">
                       <metric.icon size={14} className={metric.color} />
@@ -237,7 +237,7 @@ export function CaseStudies({ t }) {
                 {study.technologies.slice(0, 4).map((tech) => (
                   <span
                     key={tech}
-                    className="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-xs font-medium rounded"
+                    className="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-xs font-medium rounded-2xl"
                   >
                     {tech}
                   </span>
@@ -274,7 +274,7 @@ export function CaseStudies({ t }) {
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.9, y: 20 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-white dark:bg-gray-900 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative"
+              className="bg-white dark:bg-gray-900 rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative"
             >
               {/* Close Button */}
               <button
@@ -309,7 +309,7 @@ export function CaseStudies({ t }) {
                   {selectedCase.metrics.map((metric) => (
                     <div
                       key={metric.label}
-                      className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg text-center"
+                      className="p-4 bg-gray-50 dark:bg-gray-800 rounded-3xl text-center"
                     >
                       <metric.icon size={24} className={`${metric.color} mx-auto mb-2`} />
                       <div className={`text-2xl font-bold ${metric.color} mb-1`}>
@@ -356,7 +356,7 @@ export function CaseStudies({ t }) {
                     {selectedCase.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-sm font-medium rounded-lg"
+                        className="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-sm font-medium rounded-3xl"
                       >
                         {tech}
                       </span>
@@ -384,7 +384,7 @@ export function CaseStudies({ t }) {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="text-center p-8 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl"
+        className="text-center p-8 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-3xl"
       >
         <h3 className="text-2xl font-bold mb-4">
           Want similar results for your project?
@@ -394,7 +394,7 @@ export function CaseStudies({ t }) {
         </p>
         <button
           onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-          className="inline-flex items-center gap-2 px-8 py-4 bg-gray-900 dark:bg-white text-white dark:text-black rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors font-medium"
+          className="inline-flex items-center gap-2 px-8 py-4 bg-gray-900 dark:bg-white text-white dark:text-black rounded-3xl hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors font-medium"
         >
           <span>Let's Work Together</span>
           <ChevronRight size={20} />

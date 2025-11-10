@@ -54,7 +54,7 @@ class ErrorBoundary extends React.Component {
       return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-950 px-4">
           <div className="max-w-2xl w-full">
-            <div className="bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg p-8 shadow-lg">
+            <div className="bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-lg">
               <div className="flex items-center gap-4 mb-6">
                 <div className="p-3 bg-red-100 dark:bg-red-900/20 rounded-full">
                   <AlertTriangle className="text-red-600 dark:text-red-400" size={32} />
@@ -70,7 +70,7 @@ class ErrorBoundary extends React.Component {
               </div>
 
               {import.meta.env.DEV && this.state.error && (
-                <div className="mb-6 p-4 bg-gray-100 dark:bg-gray-900 rounded-lg overflow-auto">
+                <div className="mb-6 p-4 bg-gray-100 dark:bg-gray-900 rounded-3xl overflow-auto">
                   <p className="text-sm font-mono text-red-600 dark:text-red-400 mb-2">
                     {this.state.error.toString()}
                   </p>

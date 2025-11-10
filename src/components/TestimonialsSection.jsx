@@ -60,7 +60,7 @@ export function TestimonialsSection({ t }) {
               delay={index * 100}
               threshold={0.2}
             >
-              <div className="p-6 bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-lg hover:shadow-xl transition-shadow h-full flex flex-col">
+              <div className="p-6 bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-3xl hover:shadow-xl transition-shadow h-full flex flex-col">
                 {/* Quote Icon */}
                 <div className="mb-4">
                   <Quote className="text-gray-400 dark:text-gray-600" size={32} />
@@ -129,7 +129,7 @@ export function TestimonialsSection({ t }) {
             href="https://www.linkedin.com/in/mikail-lekesiz/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-black rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-black rounded-3xl hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
           >
             Write a Recommendation on LinkedIn
           </a>
