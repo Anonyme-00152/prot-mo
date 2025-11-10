@@ -37,6 +37,8 @@ function App() {
 
   // Optimize scroll handler with throttling
   const handleScroll = useCallback(() => {
+    if (typeof window === 'undefined') return
+
     setScrolled(window.scrollY > 50)
 
     const sections = ['home', 'about', 'services', 'skills', 'experience', 'education', 'certifications', 'projects', 'contact']
@@ -83,6 +85,8 @@ function App() {
   }
 
   const downloadCV = () => {
+    if (typeof window === 'undefined') return
+
     const cvFiles = {
       fr: '/cv/cv-fr.pdf',
       en: '/cv/cv-en.pdf',

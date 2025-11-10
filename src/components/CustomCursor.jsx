@@ -17,6 +17,8 @@ export function CustomCursor() {
   const cursorY = useSpring(0, { stiffness: 500, damping: 28 })
 
   useEffect(() => {
+    if (typeof window === 'undefined') return
+
     // Check if device supports hover (desktop)
     const hasHover = window.matchMedia('(hover: hover)').matches
     if (!hasHover) return
@@ -146,6 +148,8 @@ export function MagneticCursor() {
   const cursorY = useSpring(0, { stiffness: 500, damping: 28 })
 
   useEffect(() => {
+    if (typeof window === 'undefined') return
+
     const hasHover = window.matchMedia('(hover: hover)').matches
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
@@ -234,6 +238,8 @@ export function SimpleCursor() {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
+    if (typeof window === 'undefined') return
+
     const hasHover = window.matchMedia('(hover: hover)').matches
     if (!hasHover) return
 
