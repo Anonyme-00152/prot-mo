@@ -3,7 +3,7 @@ import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
 import { useTheme } from 'next-themes'
 import {
   Github, Linkedin, Mail, Phone, MapPin, Download,
-  ChevronDown, Menu, X, ExternalLink, Twitter, Instagram, Youtube, Terminal,
+  ChevronDown, Menu, X, ExternalLink, Twitter, Instagram, Youtube,
   Code, Server, Cloud, Shield, Sparkles, GraduationCap, Moon, Sun,
   ArrowRight, Zap, Target, Users
 } from 'lucide-react'
@@ -127,8 +127,7 @@ function App() {
     { icon: Linkedin, url: '[À VENIR]', label: 'LinkedIn' },
     { icon: Twitter, url: '[À VENIR]', label: 'Twitter' },
     { icon: Instagram, url: '[À VENIR]', label: 'Instagram' },
-    { icon: Youtube, url: '[À VENIR]', label: 'YouTube' },
-    { icon: Terminal, url: 'https://guns.lol/', label: 'guns.lol' }
+    { icon: Youtube, url: '[À VENIR]', label: 'YouTube' }
   ]
 
   return (
