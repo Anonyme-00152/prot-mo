@@ -127,7 +127,8 @@ function App() {
     { icon: Linkedin, url: '[À VENIR]', label: 'LinkedIn' },
     { icon: Twitter, url: '[À VENIR]', label: 'Twitter' },
     { icon: Instagram, url: '[À VENIR]', label: 'Instagram' },
-    { icon: Youtube, url: '[À VENIR]', label: 'YouTube' }
+    { icon: Youtube, url: '[À VENIR]', label: 'YouTube' },
+    { icon: Zap, url: 'https://guns.lol/', label: 'guns.lol' }
   ]
 
   return (
