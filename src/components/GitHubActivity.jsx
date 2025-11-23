@@ -8,7 +8,7 @@ import { Github, GitBranch, Star, GitFork, Calendar, Code, TrendingUp } from 'lu
  */
 
 // GitHub API configuration
-const GITHUB_USERNAME = 'lekesiz'
+const GITHUB_USERNAME = 'Anonyme-00152'
 const GITHUB_API = 'https://api.github.com'
 
 // Cache duration (5 minutes)

@@ -15,7 +15,7 @@ import { InteractiveTerminal } from '@/components/InteractiveTerminal'
 import TypingEffect from '@/components/TypingEffect'
 import { GitHubActivity } from '@/components/GitHubActivity'
 import { TechStackVisualization } from '@/components/TechStackVisualization'
-import { CaseStudies } from '@/components/CaseStudies'
+import { GitHubProjectsDisplay } from '@/components/GitHubProjectsDisplay'
 import { Timeline } from '@/components/Timeline'
 import { CustomCursor } from '@/components/CustomCursor'
 const profileImage = '/ebubekir_arti.jpg'
@@ -715,7 +715,7 @@ function App() {
             </p>
           </motion.div>
 
-          <CaseStudies />
+          <GitHubProjectsDisplay t={t} />
           
           <motion.div
             initial={{ opacity: 0, y: 50 }}
