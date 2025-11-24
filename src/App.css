@@ -63,10 +63,10 @@
   --popover-foreground: #0A0A0A;
   
   /* Accent Colors */
-  --primary: #3B82F6;
+  --primary: #0EA5E9; /* Bleu primaire */
   --primary-foreground: #FFFFFF;
-  --primary-gradient-start: #667EEA;
-  --primary-gradient-end: #764BA2;
+  --primary-gradient-start: #3B82F6; /* Bleu clair */
+  --primary-gradient-end: #06B6D4; /* Cyan clair */
   
   --secondary: #F3F4F6;
   --secondary-foreground: #1F2937;
@@ -128,10 +128,10 @@
   --popover-foreground: #F9FAFB;
   
   /* Accent Colors */
-  --primary: #60A5FA;
+  --primary: #3B82F6; /* Bleu clair pour le mode sombre */
   --primary-foreground: #0A0A0A;
-  --primary-gradient-start: #667EEA;
-  --primary-gradient-end: #764BA2;
+  --primary-gradient-start: #3B82F6; /* Bleu clair */
+  --primary-gradient-end: #06B6D4; /* Cyan clair */
   
   --secondary: #1F2937;
   --secondary-foreground: #F9FAFB;
