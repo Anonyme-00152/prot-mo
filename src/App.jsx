@@ -770,8 +770,8 @@ function App() {
                 </div>
                 <div>
                   <p className="text-sm text-foreground-secondary mb-1">{t.contact.phone}</p>
-                  <a href="tel:+905074343253" className="text-lg font-medium hover:text-primary transition-colors">
-                    +90 507 43 43 253
+                  <a href="tel:+330769548868" className="text-lg font-medium hover:text-primary transition-colors">
+                    +33 07 69 54 88 68
                   </a>
                 </div>
               </div>
@@ -783,9 +783,7 @@ function App() {
                 <div>
                   <p className="text-sm text-foreground-secondary mb-1">{t.contact.location}</p>
                   <p className="text-lg font-medium">
-                    Tepeköy Mahallesi<br />
-                    Çengel Çeşme Caddesi No: 44<br />
-                    59800 Şarköy / Tekirdağ
+                    1 a Rte de Schweighouse, 67500 Haguenau France
                   </p>
                 </div>
               </div>
