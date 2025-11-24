@@ -66,7 +66,7 @@
   --primary: #3B82F6;
   --primary-foreground: #FFFFFF;
   --primary-gradient-start: #667EEA;
-  --primary-gradient-end: #87CEEB; /* Light Sky Blue */
+  --primary-gradient-end: #764BA2;
   
   --secondary: #F3F4F6;
   --secondary-foreground: #1F2937;
@@ -87,7 +87,7 @@
   
   /* Charts */
   --chart-1: #3B82F6;
-  --chart-2: #4FC3F7; /* Light Blue 400 */
+  --chart-2: #8B5CF6;
   --chart-3: #EC4899;
   --chart-4: #10B981;
   --chart-5: #F59E0B;
@@ -131,7 +131,7 @@
   --primary: #60A5FA;
   --primary-foreground: #0A0A0A;
   --primary-gradient-start: #667EEA;
-  --primary-gradient-end: #87CEEB; /* Light Sky Blue */
+  --primary-gradient-end: #764BA2;
   
   --secondary: #1F2937;
   --secondary-foreground: #F9FAFB;
@@ -152,7 +152,7 @@
   
   /* Charts */
   --chart-1: #60A5FA;
-  --chart-2: #4FC3F7; /* Light Blue 400 */
+  --chart-2: #A78BFA;
   --chart-3: #F472B6;
   --chart-4: #34D399;
   --chart-5: #FBBF24;
